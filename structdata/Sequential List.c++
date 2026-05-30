@@ -63,7 +63,7 @@ int Getelem(Sqlist L,int i,Elemtype &e){
 	e=L.elem[i-1];
 	return OK;
 }
-//按值查找,一样返回位置，没返回0 
+//按值查找,一样则返回位置，没有则返回0 
 int Locate(Sqlist L,Elemtype e){
 	for(int i=0;i<L.length;i++){
 		if(e==L.elem[i])
